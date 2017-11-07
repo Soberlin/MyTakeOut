@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+ <!--   <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="我是标题"
+        android:gravity="center"
+        android:background="#3F51B5"
+        />-->
+
+    <FrameLayout
+        android:id="@+id/home_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/home_tabs"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:background="#FFDED6D9"
+        android:layout_height="60dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@drawable/home"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:text="@string/home"
+                android:textColor="@color/main_bottom_tv_color"
+                android:textSize="16sp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@drawable/order"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:text="@string/order"
+                android:textColor="@color/main_bottom_tv_color"
+                android:textSize="16sp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@drawable/me"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:text="@string/me"
+                android:textColor="@color/main_bottom_tv_color"
+                android:textSize="16sp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@drawable/more"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:text="@string/more"
+                android:textColor="@color/main_bottom_tv_color"
+                android:textSize="16sp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

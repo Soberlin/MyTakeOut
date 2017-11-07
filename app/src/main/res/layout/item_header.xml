@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    //首先是轮播大图 然后是八个格子 然后是附近商家
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/layout_slider"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"/>
+
+
+
+    <include layout="@layout/item_seller_category"></include>
+
+    <include layout="@layout/item_seller_title"></include>
+
+
+</LinearLayout>

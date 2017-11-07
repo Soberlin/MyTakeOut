@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@drawable/rating_small_empty" android:id="@android:id/background"/>
+  <item android:drawable="@drawable/rating_small_full" android:id="@android:id/progress"/>
+</layer-list>
